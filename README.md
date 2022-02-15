@@ -1,16 +1,15 @@
-### Hi there 👋
-
-<!--
-**Darkit08/darkit08** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+from random import choice,choice,choices
+sayilar=(1,2,3,4,5,6,7,8,9,0,"vefa","hazal")
+sifre=str(input("krilacak sifreyi giriniz"))
+sifres=""
+adim=0
+while True:
+ print("sifreniz deneniyor...",sifres)
+ if sifre==sifres:
+   break
+ else:
+   sifres=""
+     for i in range(4):
+        sifres+=str(choice(sayilar))
+           adim+=1
+print("sifreniz krilmistir ",sifre,"adimda krilmis",adim)
